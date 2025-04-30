@@ -8,6 +8,6 @@ if __name__ == '__main__':
 	try:
 		dna_seq = input('请输入DNA序列：').upper()
 		counts = counting_dna(dna_seq)
-		print(counts)
+		print(*counts)
 	except ValueError as e:
 		print(f'错误：{e}')
